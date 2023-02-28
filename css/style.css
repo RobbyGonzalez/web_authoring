@@ -1,0 +1,126 @@
+/* Colors on the website
+    header background color: white
+    top nav background color: rgba(0, 0, 0, .97)
+    main background color: white
+    a:link color: white
+    a:visited color: rgb(188, 188, 188)
+    a:hover color: rgb(24, 155, 155)
+    footer background color: white
+    all header tags and p tags: black
+*/
+
+html {
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url("../fonts/PressStart2P-Regular.ttf") format("truetype"), url('pressstart2p-regular-webfont.woff2') format('woff2'), url('pressstart2p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+header {
+    background-color: white;
+    background: url(../images/eight_bit_charc_one.png) no-repeat 100% 0% scroll;
+    background-size: 80px 110px;
+    border: 2px dotted transparent; /*I am stuggling to get the background image where I want it. Maybe this is not the best property for what I want?*/
+}
+
+header > nav, header a, header ul {
+    background-color: rgba(0, 0, 0, .97);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: rgb(188, 188, 188);
+}
+
+header a:hover {
+    color: rgb(24, 155, 155);
+}
+
+main {
+    background-color: white; 
+}
+
+/* section {
+    background-color: white;
+} */
+
+article {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0.19), white 5%, transparent 25%),
+        linear-gradient(135deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%),
+        linear-gradient(225deg, rgba(0, 0, 0, 0.10), white 7%, transparent 25%),
+        linear-gradient(3155deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%);
+}
+
+footer {
+    background-color: white;
+}
+
+h2-h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 300%;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 175%;
+}
+
+h4 {
+    font-size: 150%;
+}
+
+h5 {
+    font-size: 125%;
+}
+
+h6 {
+    font-size: 115%;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 100%;
+    line-height: 1.65rem;
+}
+
+address {
+    color: black;
+    font-style: normal;
+}
+
+.piePiece ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#email {
+    text-transform: lowercase;
+}

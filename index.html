@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robby's Portfolio</title>
+
+    <!--Here starts the fontawesome links-->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <!--style sheet for fonts-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Robby's Stats</h1>
+        <!--create a section for a home button image-->
+        <nav> <!--Remove after pie chart is fully functional-->
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>JavaScript</a></li>
+                <li><a href="#"><i class="fa-solid fa-palette"></i>CSS</a></li>
+                <li><a href="#"><i class="fa-solid fa-atom"></i>React</a></li>
+                <li><a href="#"><i class="fa-solid fa-video"></i>Video</a></li>
+                <li><a href="#"><i class="fa-solid fa-briefcase"></i>Work Experience</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Need to add the following
+        1. content in the p tags with at least 2 inline elements. can you get a block quote in there?
+        2. add images for the thumbnails-->
+    <main>
+        <!--Make this into an interactive pie chart-->
+        <section class="piePiece" id="javaScript">
+            <h2>JavaScript Experience</h2>
+            <p>During his studies&comma; he has emphasized the use of JavaScript in every endeavor&period; Even when
+                submitting his logic and design project&comma; he decided to debug and run a web based tic tac toe game
+                using JavaScript&period; Creating dynamic web pages while inserting <abbr
+                    title="HyperText Markup Language">HTML</abbr>&sol;<abbr title="Cascading Style Sheets">CSS</abbr>
+                into the <abbr title="Document Object Model">DOM</abbr> using JavaScript is something that gives this
+                web developer life&excl;</p>
+            <p>Robby has also worked with <abbr title="JavaScript Object Notation">JSON</abbr> and <abbr
+                    title="Extensible HyperText Markup Language">XTML</abbr> files to create web pages that refresh in
+                <em>real</em> time for current events and web design related content&comma; as well as forms to capture
+                customer data for a local restaurant&apos;s website.</p>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#" target="_blank">Styling</a></li>
+                    <li><a href="#" target="_blank">Games</a></li>
+                    <li><a href="#" target="_blank">Forms</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="piePiece" id="css">
+            <h2><abbr title="Cascading Style Sheets">CSS</abbr> Experience</h2>
+            <p>CSS has been this developer&apos;s most recent area of focus. He is fascinated by adding animation to a
+                page using CSS, as well as changing the overall appearance of a page just by changing out a style sheet.
+                Robby sees a lot of potential in CSS when updating websites based on seasonality. <q>It&apos;s a great
+                    way to freshen things up!</q> one of his clients reports.</p>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#" target="_blank">Animation</a></li>
+                    <li><a href="#" target="_blank">HTML&#47;CSS</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="piePiece" id="react">
+            <h2>React Experience</h2>
+            <p>React is a new area for Robby that he will be exploring as the Spring 2023 semester progresses. He hears
+                great things and can&apos;t wait to see what he can do with it, but <em>FIRST</em>, he wants to have a
+                strong understanding of the three pillars of web design: <abbr
+                    title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and
+                JavaScript.</p>
+            <nav class="navBar">
+                <a href="#" target="_blank">React</a>
+            </nav>
+        </section>
+
+        <section class="piePiece" id="video">
+            <h2>Video Editing Experience</h2>
+            <p>Robby has a bit of experience in storytelling, and creating videos is one of his favorite mediums for
+                doing so. He has created videos for his YouTube channel #re, as well as various school projects.</p>
+            <nav class="navBar">
+                <a href="#" target="_blank">Videos</a>
+            </nav>
+        </section>
+
+        <section class="piePiece" id="work">
+            <h2>Work Experience</h2>
+            <p>The bulk of Robby&apos;s work experience is in corporate retail in the DFW area. He has managed teams
+                domestically and across the globe. Working with others brings him joy in his day&hyphen;to&hyphen;day
+                work life, and he knows it takes a village to get a project from point A to Z. He has worn many hats
+                from category manager, product development, analytics and reporting, and more.</p>
+            <p>More recently, Robby has also helped <a href="https://eastfieldnews.com/"
+                    target="_blank">eastfieldnews.com</a> with managing their website from a day&hyphen;to&hyphen;day
+                prospective and planning for the long term. More to come here!</p>
+            <p>Having spent some time abroad, he has also had the opportunity to work with a non-profit organization
+                called <a href="https://digital-inclusion.lu/" target="_blank">Digital Inclusion</a>, refurbishing used
+                computers for those in need in the Luxembourg area.</p>
+            <nav class="navBar">
+                <a href="https://www.linkedin.com/in/robby-gonzalez-78476746/" target="_blank"><img
+                        src="images/linkedIn.png" alt="LinkedIn thumbnail" height="25" width="25"></a>
+                <a href="https://eastfieldnews.com/" target="_blank"><img src="images/eastfieldNews.png"
+                        alt="Eastfield News Thumbnail" height="25"></a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contact me&colon; <br>
+            <a href="mailto:webmaster@webmaster.com" id="email">RobbyGonzalez@gmail.com</a>
+        </address>
+        <p><small id="copyright">Robby&apos;s Portfolio &copy;2023</small></p>
+        <p><small>This site is made possible by <a href="https://www.dallascollege.edu/pages/default.aspx"
+                    target="_blank">Dallas College</a></small></p>
+    </footer>
+
+</body>
+
+</html>
