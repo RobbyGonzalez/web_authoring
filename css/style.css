@@ -11,6 +11,11 @@
 
 html {
     font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 @font-face {
@@ -22,15 +27,39 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: white;
-    background: url(../images/eight_bit_charc_one.png) no-repeat 100% 0% scroll;
-    background-size: 80px 110px;
-    border: 2px dotted transparent; /*I am stuggling to get the background image where I want it. Maybe this is not the best property for what I want?*/
+    /* background: url(../images/eight_bit_charc_one.png) no-repeat 100% 0% scroll; */
+    /* background-size: 80px 110px; */
+    /*border: 2px dotted transparent;*/ /*I am stuggling to get the background image where I want it. Maybe this is not the best property for what I want?*/
 }
+
+#avatar {
+    position: absolute;
+    top: 1%;
+    right: 22%;
+    width: 80px;
+    height: 110px;
+    min-width: 80px;
+}
+
+@media only screen and (max-width: 1800px) {
+    #avatar {
+      right: 10%;
+      top: 1%;
+    }
+}
+
+  @media only screen and (max-width: 1200px) {
+    #avatar {
+      right: 45%;
+      top: 20%;
+    }
+} 
 
 header > nav, header a, header ul {
     background-color: rgba(0, 0, 0, .97);
@@ -56,18 +85,6 @@ main {
     background-color: white; 
 }
 
-/* section {
-    background-color: white;
-} */
-
-article {
-    background: 
-        linear-gradient(45deg, rgba(0, 0, 0, 0.19), white 5%, transparent 25%),
-        linear-gradient(135deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%),
-        linear-gradient(225deg, rgba(0, 0, 0, 0.10), white 7%, transparent 25%),
-        linear-gradient(3155deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%);
-}
-
 footer {
     background-color: white;
 }
@@ -82,6 +99,7 @@ h1 {
     color: black;
     font-size: 300%;
     font-weight: 600;
+    text-align: center;
 }
 
 h2 {
@@ -124,3 +142,57 @@ address {
 #email {
     text-transform: lowercase;
 }
+
+/*Blog.html*/
+
+article {
+    background:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.19), white 5%, transparent 25%),
+        linear-gradient(135deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%),
+        linear-gradient(225deg, rgba(0, 0, 0, 0.10), white 7%, transparent 25%),
+        linear-gradient(315deg, rgba(0, 0, 0, 0.12), white 10%, transparent 50%);
+    border: solid 2px darkgray;
+    padding: 2%;
+    margin: 2.5% 1%;
+    /* border-radius: 5% 0% 5% 2% / 10% 2% 10% 3%; */
+    border-radius: 0 50px 50px 0;
+}
+
+article:after { /*brings the border all the way around the content so that this can be a full proof template*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article h2 {
+    margin-top: 1.2%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.thumbnail {
+    float: left;
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem 1.5rem 0.5rem 0; 
+    padding-right: 1%;
+}
+
+.thumbnail figcaption {
+    font-size: .9rem;
+    color:rgb(79, 75, 75);
+}
+
+/* trying to get the p elements to clear left at a certain vw */
+/* article p {
+    width: 100%;
+    min-width: 350px;
+} */
+
+/* trying to get the 2nd p element in the 4th article to clear left*/
+/* #four p:nth-child(1) {
+   clear: left;
+} */
