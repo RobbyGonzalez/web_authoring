@@ -35,16 +35,17 @@ header {
     background-color: white;
     /* background: url(../images/eight_bit_charc_one.png) no-repeat 100% 0% scroll; */
     /* background-size: 80px 110px; */
-    /*border: 2px dotted transparent;*/ /*I am stuggling to get the background image where I want it. Maybe this is not the best property for what I want?*/
+    /*border: 2px dotted transparent;*/ 
+    /*I am stuggling to get the background image where I want it. Maybe this is not the best property for what I want?*/
 }
 
 #avatar {
     position: absolute;
     top: 1%;
-    right: 22%;
-    width: 80px;
-    height: 110px;
-    min-width: 80px;
+    right: 12%;
+    width: 75px;
+    height: auto;
+    width: 10vw;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -185,14 +186,3 @@ figcaption {
     font-size: .9rem;
     color:rgb(79, 75, 75);
 }
-
-/* trying to get the p elements to clear left at a certain vw */
-/* article p {
-    width: 100%;
-    min-width: 350px;
-} */
-
-/* trying to get the 2nd p element in the 4th article to clear left*/
-/* #four p:nth-child(1) {
-   clear: left;
-} */
