@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pieWrapper {
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 10% 50px;
+    position: relative;
+    border-radius: 50%;
+    color: black;
+}
+
+.focus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#javaScript{
+    background-color: lightskyblue;
+    height:50%;
+    width: 50%;
+    display: block;
+}
+
+#css{
+    background-color: rgb(56, 151, 72);
+    height:50%;
+    width: 50%;
+    display: block;
+}
+
+#react{
+    background-color: rgb(241, 136, 50);
+    height:50%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+}
+
+#video{
+    background-color: rgb(252, 239, 59);
+    height:50%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+#work{
+    background-color: rgb(216, 56, 56);
+    height:50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+}
+
