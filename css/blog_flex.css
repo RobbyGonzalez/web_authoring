@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    background:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.19), white 5%, transparent 25%),
+        linear-gradient(135deg, rgba(0, 0, 0, 0.19), white 10%, transparent 50%),
+        linear-gradient(225deg, rgba(0, 0, 0, 0.10), white 7%, transparent 25%),
+        linear-gradient(315deg, rgba(0, 0, 0, 0.12), white 10%, transparent 50%);
+    border: solid 2px darkgray;
+    padding: 2%;
+    margin: 2.5% 1%;
+    width: 700px;
+    border-radius: 0 50px 50px 0;
+    display: flex; /*defines the article element as a flex box*/
+    flex-direction: column;
+    align-items: center;
+}
+
+article h2 {
+    margin-top: 1.2%;
+}
+
+.thumbnail {
+    width: 240px;
+    height: auto;
+    margin: 1rem 1.5rem 0.5rem 0; 
+    padding-right: 1%;
+    display: flex; /*defines the class thumbnail as a nested flex box*/
+    flex-direction: column;
+}
+
+.thumbnail figcaption {
+    font-size: .9rem;
+    color:rgb(79, 75, 75);
+    align-self: center;
+}
+
+p {
+    margin: 1rem;
+}
