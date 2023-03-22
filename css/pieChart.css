@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-#wrapper {
+#wrapper { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,27 +20,24 @@ html {
     position: relative;
     border-radius: 50%;
     color: black;
-}
-
-.focus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
 #javaScript{
     background-color: lightskyblue;
-    height:50%;
     width: 50%;
-    display: block;
+    height: 50%;
+    /* padding-top: 1rem; */
 }
 
 #css{
     background-color: rgb(56, 151, 72);
     height:50%;
     width: 50%;
-    display: block;
 }
 
 #react{
@@ -70,6 +67,5 @@ html {
     position: absolute;
     top: 50%;
     right: 0;
-    display: block;
 }
 
