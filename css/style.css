@@ -52,12 +52,13 @@ header {
     }
 } 
 
-header > nav, header a, header ul {
+header a {
     background-color: rgba(0, 0, 0, .97);
     color: white;
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;
+    line-height: 3.5rem;
 }
 
 header a:link {
@@ -70,6 +71,8 @@ header a:visited {
 
 header a:hover {
     color: rgb(24, 155, 155);
+    background-color: whitesmoke;
+    border: 1px solid black;
 }
 
 main {
@@ -77,6 +80,7 @@ main {
 }
 
 footer {
+    border-top: 3px solid black;
     background-color: white;
 }
 
