@@ -36,11 +36,22 @@ main {
 article {
     display: grid;
     justify-items: center;
+    align-content: start;
     /* align-items: top; */
     padding: 2%;
-    grid: 1fr / 1fr;
+    grid: auto / auto;
     /* grid-auto-flow:dense; */
 }
+
+/* figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    display: block;
+    margin: 0 auto;
+} */
 
 h2 {
     text-align: center;
