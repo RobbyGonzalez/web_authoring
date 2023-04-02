@@ -1,0 +1,44 @@
+
+
+#gridContainer {
+    display: grid;
+    grid-template-rows: [header-start] auto [header-end] 5px [main-start] auto 30px [footer-start] auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "break"
+        "main"
+        "footer";
+}
+
+header {
+    display: grid;
+    grid-template-rows: [h1-start] auto [nav-start] auto;
+    grid-template-columns: auto;
+}
+
+.navBar {
+    display: grid;
+    grid-template-rows: [nav-start] auto [nav-end];
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+main {
+    grid-row: main-start;
+}
+
+footer {
+    grid-row: footer;
+    /* align-self: center; */
+    justify-self: center;
+}
+
+/*540 max-width*/
+@media only screen and (max-width: 540px) {
+    .navBar {
+        grid-template-rows: [nav-one] auto;
+        grid-template-columns: repeat(3, 1fr); /*get rid of this to make each item the whole width*/
+        grid-auto-flow: row;
+    }
+}

@@ -11,45 +11,50 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/brands.css">
     <link rel="stylesheet" href="css/solid.css">
-    <!--style sheet for remainder of page-->
+    <!--End FA style sheets-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navBarGrid.css">
     <link rel="stylesheet" href="css/pieChart.css">
+    <script type="text/javascript" src="js/pieChart.js"></script>
 </head>
 
-<body>
+<body id="gridContainer">
     <header>
         <h1>Robby's Stats</h1>
         <!--create a section for a home button image-->
-        <nav> <!--Remove after pie chart is fully functional-->
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>JavaScript</a></li>
-                <li><a href="#"><i class="fa-solid fa-palette"></i>CSS</a></li>
-                <li><a href="#"><i class="fa-solid fa-atom"></i>React</a></li>
-                <li><a href="#"><i class="fa-solid fa-video"></i>Video</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i>Work Experience</a></li>
-                <li><a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
-            </ul>
+        <nav class="navBar"> <!--Remove after pie chart is fully functional-->
+            <a class="home" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+            <a class="javaScript" href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;JavaScript</a>
+            <a class="css" href="#"><i class="fa-solid fa-palette"></i>&nbsp;CSS</a>
+            <a class="react" href="#"><i class="fa-solid fa-atom"></i>&nbsp;React</a>
+            <a class="video" href="#"><i class="fa-solid fa-video"></i>&nbsp;Video</a>
+            <a class="experience" href="#"><i class="fa-solid fa-briefcase"></i>&nbsp;Experience</a>
+            <a class="product" href="products.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Products</a>
+            <a class="blog" href="blog.html"><i class="fa-solid fa-blog"></i>&nbsp;Blog</a>
         </nav>
     </header>
     <!--Need to add the following
         1. content in the p tags with at least 2 inline elements. can you get a block quote in there?
         2. add images for the thumbnails-->
-    <main id="wrapper">
+    <main>
         <!--Make this into an interactive pie chart-->
-        <div id="pieWrapper">
+        <figure>
+            <figcaption id="caption">Robby's Pie Chart</figcaption>
+            <svg viewBox="0 0 63.6619772368 63.6619772368">
+                <circle class="pie1 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                <circle class="pie2 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                <circle class="pie3 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                <circle class="pie4 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                <circle class="pie5 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+            </svg>
+        </figure>
+
             <section class="piePiece">
                 <div id="javaScript">
                     <h2 class="focus">JavaScript Experience</h2>
-                    <p>20%</p>
                 </div>
                 <div class="key-wrap"></div>
-
-
-
-
-
-                <!-- <p>During his studies&comma; he has emphasized the use of JavaScript in every endeavor&period; Even when
+                <p>During his studies&comma; he has emphasized the use of JavaScript in every endeavor&period; Even when
                     submitting his logic and design project&comma; he decided to debug and run a web based tic tac toe
                     game
                     using JavaScript&period; Creating dynamic web pages while inserting <abbr
@@ -71,19 +76,14 @@
                         <li><a href="#" target="_blank">Games</a></li>
                         <li><a href="#" target="_blank">Forms</a></li>
                     </ul>
-                </nav> -->
+                </nav>
             </section>
 
             <section class="piePiece">
                 <div id="css">
                     <h2 class="focus"><abbr title="Cascading Style Sheets">CSS</abbr> Experience</h2>
-                    <p>20%</p>
                 </div>
                 <div class="key-wrap"></div>
-
-
-
-
                 <p>CSS has been this developer&apos;s most recent area of focus. He is fascinated by adding animation to
                     a
                     page using CSS, as well as changing the overall appearance of a page just by changing out a style
@@ -102,14 +102,8 @@
             <section class="piePiece">
                 <div id="react">
                     <h2 class="focus">React Experience</h2>
-                    <p>10%</p>
                 </div>
                 <div class="key-wrap"></div>
-
-
-
-
-
                 <p>React is a new area for Robby that he will be exploring as the Spring 2023 semester progresses. He
                     hears
                     great things and can&apos;t wait to see what he can do with it, but <em>FIRST</em>, he wants to have
@@ -126,16 +120,8 @@
             <section class="piePiece">
                 <div id="video">
                     <h2 class="focus">Video Editing Experience</h2>
-                    <p>10%</p>
                 </div>
                 <div class="key-wrap"></div>
-
-
-
-
-
-
-
                 <p>Robby has a bit of experience in storytelling, and creating videos is one of his favorite mediums for
                     doing so. He has created videos for his YouTube channel #re, as well as various school projects.</p>
                 <nav class="navBar">
@@ -143,18 +129,8 @@
                 </nav>
             </section>
 
-            <section class="piePiece">
-                <div id="work">
-                    <h2 class="focus">Work Experience</h2>
-                    <p>20%</p>
-                </div>
-                <div class="key-wrap"></div>
-
-
-
-
-
-
+            <section class="piePiece" id="work">
+                <h2>Work Experience</h2>
                 <p>The bulk of Robby&apos;s work experience is in corporate retail in the DFW area. He has managed teams
                     domestically and across the globe. Working with others brings him joy in his
                     day&hyphen;to&hyphen;day
@@ -168,14 +144,8 @@
                     called <a href="https://digital-inclusion.lu/" target="_blank">Digital Inclusion</a>, refurbishing
                     used
                     computers for those in need in the Luxembourg area.</p>
-                <nav class="navBar">
-                    <a href="https://www.linkedin.com/in/robby-gonzalez-78476746/" target="_blank"><img
-                            src="images/linkedIn.png" alt="LinkedIn thumbnail" height="25" width="25"></a>
-                    <a href="https://eastfieldnews.com/" target="_blank"><img src="images/eastfieldNews.png"
-                            alt="Eastfield News Thumbnail" height="25"></a>
-                </nav>
             </section>
-        </div>
+        </figure>
     </main>
 
     <footer>
@@ -187,7 +157,7 @@
         <p><small>This site is made possible by <a href="https://www.dallascollege.edu/pages/default.aspx"
                     target="_blank">Dallas College</a></small></p>
         <img id="avatar" src="images/eight_bit_charc_one.png" width="288" height="672" alt="8-bit avatar">
-        
+
     </footer>
 
 </body>

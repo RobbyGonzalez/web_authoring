@@ -1,0 +1,106 @@
+#gridContainer {
+    display: grid;
+    grid-template-rows: [header-start] auto [header-end] 5px [main-start] auto 30px [footer-start] auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "break"
+        "main"
+        "footer";
+}
+
+header {
+    display: grid;
+    grid-template-rows: [h1-start] auto [nav-start] auto;
+    grid-template-columns: auto;
+}
+
+.navBar {
+    display: grid;
+    grid-template-rows: [nav-start] auto [nav-end];
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+main {
+    grid-row: main-start;
+    column-gap: 1.5rem;
+    display: grid;
+    /* grid: 1fr 1fr / 1fr 1fr; */
+    /* grid-auto-rows: min-content; */
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridArticle {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    /* align-items: top; */
+    padding: 2%;
+    grid: auto / auto;
+    /* grid-auto-flow:dense; */
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    grid-row: footer;
+    /* align-self: center; */
+    justify-self: center;
+}
+
+/*540 max-width*/
+@media only screen and (max-width: 540px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    article {
+        background:
+            linear-gradient(45deg, rgba(24, 155, 155, 0.19), white 5%, transparent 25%),
+            linear-gradient(135deg, rgba(24, 155, 155, 0.19), white 10%, transparent 50%),
+            linear-gradient(225deg, rgba(24, 155, 155, 0.10), white 7%, transparent 25%),
+            linear-gradient(315deg, rgba(24, 155, 155, 0.12), white 10%, transparent 50%);
+        border: solid 2px darkgray;
+        padding: 2%;
+        margin: 2.5% 1%;
+        width: 80%;
+        border-radius: 0 50px 50px 0;
+        display: flex; /*defines the article element as a flex box*/
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article h2 {
+        margin-top: 1.2%;
+    }
+    
+    .thumbnail {
+        width: 240px;
+        height: auto;
+        margin: 1rem 1.5rem 0.5rem 0; 
+        padding-right: 1%;
+        display: flex; /*defines the class thumbnail as a nested flex box*/
+        flex-direction: column;
+    }
+    
+    .thumbnail figcaption {
+        font-size: .9rem;
+        color:rgb(79, 75, 75);
+        align-self: center;
+    }
+    
+    p {
+        margin: 1rem;
+    }
+    
+    .navBar {
+        grid-template-rows: [nav-one] auto;
+        grid-template-columns: repeat(3, 1fr); /*get rid of this to make each item the whole width*/
+        grid-auto-flow: row;
+    }
+}
