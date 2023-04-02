@@ -4,115 +4,168 @@
 <head>
     <title>Interactive Pie Chart</title>
     <style>
-        /* Pie Chart Container */
-        .pie-chart {
-            width: 300px;
-            height: 300px;
-            position: relative;
+        figure {
+            background-color: #ffffff;
+            display: block;
+            height: 0;
             margin: 0 auto;
+            position: relative;
+            font-size: 1vw;
+            width: 40em;
+            padding-bottom: 40em;
         }
 
-        /* Pie Chart Slice */
-        .pie-chart__slice {
-            position: absolute;
+        figcaption {
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
             width: 100%;
+            position: absolute;
+            left: 0;
+            top: 40%;
+            z-index: 2;
+        }
+
+        svg {
+            display: block;
             height: 100%;
-            clip: rect(0, 150px, 300px, 0);
-            border-radius: 50%;
-            transform-origin: 50% 50%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: visible;
         }
 
-        .pie-chart__slice:nth-child(1) {
-            transform: rotate(0deg);
-            background-color: #f44336;
+        circle {
+            fill: rgba(0, 0, 0, 0);
+            stroke-width: 31.8309886184;
+            stroke-dasharray: 0, 0, 0, 100;
+            stroke-dashoffset: 25;
+            -webkit-animation: pie1 3s ease both;
+            animation: pie1 3s ease both;
         }
 
-        .pie-chart__slice:nth-child(2) {
-            transform: rotate(60deg);
-            background-color: #9c27b0;
+        .pie1 {
+            stroke: hsl(180, 70%, 30%);
         }
 
-        .pie-chart__slice:nth-child(3) {
-            transform: rotate(120deg);
-            background-color: #2196f3;
+        .pie2 {
+            stroke: hsl(180, 70%, 50%);
+            -webkit-animation-name: pie2;
+            animation-name: pie2;
         }
 
-        .pie-chart__slice:nth-child(4) {
-            transform: rotate(180deg);
-            background-color: #4caf50;
+        .pie3 {
+            stroke: hsl(180, 70%, 20%);
+            -webkit-animation-name: pie3;
+            animation-name: pie3;
         }
 
-        .pie-chart__slice:nth-child(5) {
-            transform: rotate(240deg);
-            background-color: #ff9800;
+        .pie4 {
+            stroke: hsl(180, 0%, 70%);
+            -webkit-animation-name: pie4;
+            animation-name: pie4;
         }
 
-        .pie-chart__slice:nth-child(6) {
-            transform: rotate(300deg);
-            background-color: #607d8b;
+        .pie5 {
+            stroke: hsl(161, 13%, 24%);
+            -webkit-animation-name: pie5;
+            animation-name: pie5;
         }
 
-        /* Pie Chart Legend */
-        .pie-chart__legend {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
+        /*
+ pie percentage made by stroke-dasharray.
+ stroke-dasharray format is...
+
+ keyframe 100% : 0 offset this-percentage rest
+*/
+
+        /* 1st pie is 50% */
+        @-webkit-keyframes pie1 {
+
+            100% {
+                stroke-dasharray: 50, 50, 0, 0;
+            }
         }
 
-        .pie-chart__legend-item {
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
+        @keyframes pie1 {
+
+            100% {
+                stroke-dasharray: 50, 50, 0, 0;
+            }
         }
 
-        .pie-chart__legend-item::before {
-            content: "";
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin-right: 5px;
-            border-radius: 50%;
+        /* 2nd pie is 20% stop here*/
+        @-webkit-keyframes pie2 {
+
+            100% {
+                stroke-dasharray: 0, 50, 30, 20;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(1)::before {
-            background-color: #f44336;
+        @keyframes pie2 {
+
+            100% {
+                stroke-dasharray: 0, 50, 30, 20;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(2)::before {
-            background-color: #9c27b0;
+        /* 3rd pie is 20% */
+        @-webkit-keyframes pie3 {
+
+            100% {
+                stroke-dasharray: 0, 70, 20, 10;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(3)::before {
-            background-color: #2196f3;
+        @keyframes pie3 {
+
+            100% {
+                stroke-dasharray: 0, 70, 20, 10;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(4)::before {
-            background-color: #4caf50;
+        /* 4th pie is 5% */
+        @-webkit-keyframes pie4 {
+
+            100% {
+                stroke-dasharray: 0, 90, 5, 5;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(5)::before {
-            background-color: #ff9800;
+        @keyframes pie4 {
+
+            100% {
+                stroke-dasharray: 0, 90, 5, 5;
+            }
         }
 
-        .pie-chart__legend-item:nth-child(6)::before {
-            background-color: #607d8b;
+        /* 5th pie is 5% */
+        @-webkit-keyframes pie5 {
+
+            100% {
+                stroke-dasharray: 0, 95, 5, 5;
+            }
         }
 
-        /* Hover Effect */
-        .pie-chart__slice:hover {
-            transform: scale(1.1);
+        @keyframes pie5 {
+
+            100% {
+                stroke-dasharray: 0, 95, 5, 5;
+            }
         }
+
+
     </style>
 </head>
 
-<body>
-    <div class="pie-chart">
-        <div class="pie-chart__slice"></div>
-        <div class="pie-chart__slice"></div>
-        <div class="pie-chart__slice"></div>
-        <div class="pie-chart__slice"></div>
-        <div class="pie-chart__slice"></div>
-</body>
-</html>
+<figure>
+    <figcaption>SVG PIE Chart with CSS animation</figcaption>
+    <svg viewBox="0 0 63.6619772368 63.6619772368">
+        <circle class="pie1 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+        <circle class="pie2 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+        <circle class="pie3 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+        <circle class="pie4 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+        <circle class="pie5 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+    </svg>
+</figure>
