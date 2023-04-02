@@ -45,7 +45,7 @@ header {
     }
 }
 
-  @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     #avatar {
       right: 45%;
       top: 20%;
@@ -69,10 +69,12 @@ header a:visited {
     color: rgb(188, 188, 188);
 }
 
-header a:hover {
-    color: rgb(24, 155, 155);
-    background-color: whitesmoke;
-    border: 1px solid black;
+@media only screen and (min-width: 999px) {
+    header a:hover {
+        color: rgb(24, 155, 155);
+        background-color: whitesmoke;
+        border: 1px solid black;
+    }
 }
 
 main {

@@ -13,7 +13,7 @@ article {
     border: solid 2px darkgray;
     padding: 2%;
     margin: 2.5% 1%;
-    width: 700px;
+    width: 40%;
     border-radius: 0 50px 50px 0;
     display: flex; /*defines the article element as a flex box*/
     flex-direction: column;
@@ -41,4 +41,11 @@ article h2 {
 
 p {
     margin: 1rem;
+}
+
+/*540 max-width*/
+@media only screen and (max-width: 540px) {
+    article {
+      width: 80%;
+    }
 }
