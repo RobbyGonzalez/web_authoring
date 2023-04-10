@@ -11,6 +11,11 @@
 
 html {
     font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -31,39 +36,32 @@ header {
 }
 
 #avatar {
-    position: absolute;
-    top: 50%;
-    right: 12%;
     height: auto;
     width: 9vw;
 }
 
-@media only screen and (min-height: 910px) {
+@media only screen and (max-width: 1200px) {
     #avatar {
-      right: 10%;
-      top: 30%;
+        display: none;
+    }
+    figure {
+        grid-template-columns: auto auto !important;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 850px) {
     #avatar {
-      left: 10%;
-      top: 60%;
+        display: none;
     }
-} 
-
-@media only screen and (max-width: 420px) {
-    #avatar {
-      left: 10%;
-      top: 50%;
+    figure {
+        display: flex !important;
+        margin: 2% !important;
+        flex-wrap: wrap;
     }
-} 
-
-@media only screen and (max-width: 380px) {
-    #avatar {
-      display: none;
+    #categoryCard {
+        margin: 5% auto;
     }
-} 
+}  
 
 header a {
     background-color: rgba(0, 0, 0, .97);
@@ -144,12 +142,38 @@ address {
     font-style: normal;
 }
 
-.piePiece ul {
+div ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 #email {
     text-transform: lowercase;
+}
+
+.pieData {
+    display: none;
+}
+
+#categoryCard {
+    border: 5px solid black;
+    padding: 1.5rem;
+    border-radius: 4%;
+}
+
+#categoryCard h2 {
+    position: relative;
+    text-align: center;
+    animation-name: zoom;
+    animation-duration: 2.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+    0% { left: 0%; top: 0%; transform: skewY(6deg)}
+	25% { left: 20%; top: 0%; transform: skewY(3deg)}
+	50% { left: -20%; top: 0%;}
+	75% { left: 20%; top: 0%;}
+	100% { left: 0%; top: 0%;}
 }
 

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navBarGrid.css">
     <link rel="stylesheet" href="css/pieChart.css">
-    <script type="text/javascript" src="js/pieChart.js"></script>
+    <script src="js/pieChart.js"></script>
 </head>
 
 <body id="gridContainer">
@@ -41,16 +41,20 @@
         <figure>
             <figcaption id="caption">Robby's Pie Chart</figcaption>
             <svg viewBox="0 0 63.6619772368 63.6619772368">
-                <circle class="pie1 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-                <circle class="pie2 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-                <circle class="pie3 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-                <circle class="pie4 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-                <circle class="pie5 piePiece" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                <circle class="piePiece pie1" id="pieceOne" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
+                <circle class="piePiece pie2" id="pieceTwo" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
+                <circle class="piePiece pie3" id="pieceThree" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
+                <circle class="piePiece pie4" id="pieceFour" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
+                <circle class="piePiece pie5" id="pieceFive" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
             </svg>
+            <div id="categoryCard">
+
+            </div>
+            <img id="avatar" src="images/eight_bit_charc_one.png" width="288" height="672" alt="8-bit avatar">
         </figure>
 
-            <section class="piePiece">
-                <div id="javaScript">
+            <section class="pieData" id="javaScript">
+                <div>
                     <h2 class="focus">JavaScript Experience</h2>
                 </div>
                 <div class="key-wrap"></div>
@@ -79,8 +83,8 @@
                 </nav>
             </section>
 
-            <section class="piePiece">
-                <div id="css">
+            <section class="pieData" id="css">
+                <div>
                     <h2 class="focus"><abbr title="Cascading Style Sheets">CSS</abbr> Experience</h2>
                 </div>
                 <div class="key-wrap"></div>
@@ -99,8 +103,8 @@
                 </nav>
             </section>
 
-            <section class="piePiece">
-                <div id="react">
+            <section class="pieData" id="react">
+                <div>
                     <h2 class="focus">React Experience</h2>
                 </div>
                 <div class="key-wrap"></div>
@@ -117,8 +121,8 @@
                 </nav>
             </section>
 
-            <section class="piePiece">
-                <div id="video">
+            <section class="pieData" id="video">
+                <div>
                     <h2 class="focus">Video Editing Experience</h2>
                 </div>
                 <div class="key-wrap"></div>
@@ -129,8 +133,10 @@
                 </nav>
             </section>
 
-            <section class="piePiece" id="work">
-                <h2>Work Experience</h2>
+            <section class="pieData" id="work">
+                <div>
+                    <h2>Work Experience</h2>
+                </div>
                 <p>The bulk of Robby&apos;s work experience is in corporate retail in the DFW area. He has managed teams
                     domestically and across the globe. Working with others brings him joy in his
                     day&hyphen;to&hyphen;day
@@ -145,7 +151,6 @@
                     used
                     computers for those in need in the Luxembourg area.</p>
             </section>
-        </figure>
     </main>
 
     <footer>
@@ -156,7 +161,7 @@
         <p><small id="copyright">Robby&apos;s Portfolio &copy;2023</small></p>
         <p><small>This site is made possible by <a href="https://www.dallascollege.edu/pages/default.aspx"
                     target="_blank">Dallas College</a></small></p>
-        <img id="avatar" src="images/eight_bit_charc_one.png" width="288" height="672" alt="8-bit avatar">
+        
 
     </footer>
 

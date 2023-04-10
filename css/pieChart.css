@@ -1,12 +1,16 @@
 figure {
+    display: grid;
+    grid-template-columns: 35% 45% 20%;
+    grid-gap: 4%;
+    align-items: center;
     background-color: #ffffff;
-    display: block;
-    height: 0;
-    margin: 5vh auto;
-    position: relative;
-    font-size: 1vw;
-    width: 40em;
-    padding-bottom: 40em;
+    /* display: block; */
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 15em;
+    /* position: relative; */
+    font-size: .9rem;
+    width: 95%;
 }
 
 figcaption {
@@ -14,10 +18,10 @@ figcaption {
     text-align: center;
     color: #000000;
     width: 100%;
-    position: absolute;
+    /* position: absolute;
     left: 0;
     top: 120%;
-    z-index: 2;
+    z-index: 2; */
     display: none;
 }
 
@@ -25,7 +29,7 @@ svg {
     display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     overflow: visible;
@@ -42,6 +46,7 @@ circle {
 
 .pie1 {
     stroke: hsl(180, 70%, 30%);
+    transition: stroke .2s;
 }
 
 .pie1:hover{
@@ -52,6 +57,7 @@ circle {
     stroke: hsl(160, 60%, 50%);
     -webkit-animation-name: pie2;
     animation-name: pie2;
+    transition: stroke .2s;
 }
 
 .pie2:hover{
@@ -62,6 +68,7 @@ circle {
     stroke: hsl(180, 50%, 70%);
     -webkit-animation-name: pie3;
     animation-name: pie3;
+    transition: stroke .2s;
 }
 
 .pie3:hover{
@@ -72,6 +79,7 @@ circle {
     stroke: hsl(180, 50%, 50%);
     -webkit-animation-name: pie4;
     animation-name: pie4;
+    transition: stroke .2s;
 }
 
 .pie4:hover{
@@ -82,6 +90,7 @@ circle {
     stroke: hsl(161, 13%, 24%);
     -webkit-animation-name: pie5;
     animation-name: pie5;
+    transition: stroke .2s;
 }
 
 .pie5:hover{
