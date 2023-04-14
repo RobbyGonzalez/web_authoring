@@ -6,8 +6,9 @@
     grid-template-columns: auto;
     grid-template-areas:
         "header"
-        "break"
+        "break1 "
         "main"
+        "break2"
         "footer";
 }
 
@@ -30,8 +31,8 @@ main {
 
 footer {
     grid-row: footer;
-    /* align-self: center; */
-    justify-self: center;
+    width: 100%;
+    text-align: center;
 }
 
 /*540 max-width*/

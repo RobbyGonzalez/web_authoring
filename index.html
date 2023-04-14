@@ -15,14 +15,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navBarGrid.css">
     <link rel="stylesheet" href="css/pieChart.css">
+    <link rel="stylesheet" href="css/complimentary.css">
+    <link rel="stylesheet" href="css/color.css">
     <script src="js/pieChart.js"></script>
 </head>
 
-<body id="gridContainer">
-    <header>
+<body id="gridContainer" class="bodyColor">
+    <header class="headerColor">
         <h1>Robby's Stats</h1>
         <!--create a section for a home button image-->
-        <nav class="navBar"> <!--Remove after pie chart is fully functional-->
+        <nav class="navBar navColor"> <!--Remove after pie chart is fully functional-->
             <a class="home" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
             <a class="javaScript" href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;JavaScript</a>
             <a class="css" href="#"><i class="fa-solid fa-palette"></i>&nbsp;CSS</a>
@@ -36,9 +38,9 @@
     <!--Need to add the following
         1. content in the p tags with at least 2 inline elements. can you get a block quote in there?
         2. add images for the thumbnails-->
-    <main>
+    <main class="mainColor">
         <!--Make this into an interactive pie chart-->
-        <figure>
+        <figure class="figureColor">
             <figcaption id="caption">Robby's Pie Chart</figcaption>
             <svg viewBox="0 0 63.6619772368 63.6619772368">
                 <circle class="piePiece pie1" id="pieceOne" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"></circle>
@@ -53,7 +55,7 @@
             <img id="avatar" src="images/eight_bit_charc_one.png" width="288" height="672" alt="8-bit avatar">
         </figure>
 
-            <section class="pieData" id="javaScript">
+            <section class="pieData sectionColor" id="javaScript">
                 <div>
                     <h2 class="focus">JavaScript Experience</h2>
                 </div>
@@ -153,7 +155,7 @@
             </section>
     </main>
 
-    <footer>
+    <footer class="footerColor">
         <address>
             Contact me&colon; <br>
             <a href="mailto:webmaster@webmaster.com" id="email">RobbyGonzalez@gmail.com</a>

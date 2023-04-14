@@ -177,3 +177,8 @@ div ul {
 	100% { left: 0%; top: 0%;}
 }
 
+a img {
+    border: solid 2px rgb(72, 90, 79);
+    box-shadow: -2px 2px 4px rgb(72, 90, 79);
+}
+
