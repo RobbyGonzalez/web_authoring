@@ -16,11 +16,82 @@ header {
     grid-template-columns: auto;
 }
 
+#greenButton {
+    position: absolute;
+    width: 4rem;
+    line-height: 1.2rem;
+    top: 3.5%;
+    left: 2%;
+    background-color: #66b032ae;
+}
+
+#orangeButton {
+    position: absolute;
+    width: 4rem;
+    line-height: 1.2rem;
+    top: 7.5%;
+    left: 2%;
+    background-color: #FC7307ae;
+}
+
+@media screen and (max-width: 1350px) {
+    header {
+        display: block;
+    }
+    
+    #greenButton, #orangeButton {
+        position: relative;
+        float: left;
+        top: 10px;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .navBar {
     display: grid;
     grid-template-rows: [nav-start] auto [nav-end];
     grid-auto-flow: column;
     text-align: center;
+    position: relative;
+    padding-right: 1%;
+}
+
+.navBar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+    .navBar {
+        display: block;
+        text-align: left;
+        padding: 0.5% 0.5% 0.5% 2%;
+    }
+    
+    .navBar a:not(:first-child) { /* :not() is a negation pseudo class. this will hide everything that is not the first child element.*/
+        display: none;
+    }
+    
+    .navBar a.icon {
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 0%;
+        transform: scale(1.5);
+        padding: 0.5%;
+    }
+
+    .navBar a:first-child {
+        display: block;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .navBar.responsive a {
+        display: block;
+        text-align: left;
+    }
 }
 
 main {
@@ -49,8 +120,8 @@ footer {
     text-align: center;
 }
 
-/*540 max-width*/
-@media only screen and (max-width: 540px) {
+/*999 max-width*/
+@media only screen and (max-width: 999px) {
     main {
         display: flex;
         flex-wrap: wrap;

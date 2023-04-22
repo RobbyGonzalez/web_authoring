@@ -25,6 +25,10 @@ header {
     text-align: center;
 }
 
+.navBar .icon {
+    display: none;
+}
+
 main {
     grid-row: main-start;
 }

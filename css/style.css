@@ -63,9 +63,9 @@ header {
     }
 }  
 
-header a {
-    background-color: rgba(0, 0, 0, .97);
-    color: white;
+header a { /*add back the color if you get rid of color themes*/
+    /* background-color: rgba(0, 0, 0, .97); 
+    color: white; */
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;

@@ -18,7 +18,7 @@
     color: var(--color6);
 }
 
-.navColor a:hover {
+.navColor a:hover:not(:last-child) {
     background-color: var(--color4);
     color: var(--color1);
 }
@@ -58,4 +58,9 @@
         linear-gradient(225deg, var(--color2), var(--color6) 7%, transparent 25%),
         linear-gradient(315deg, var(--color2), var(--color6) 10%, transparent 50%);
     color: var(--color7);
+}
+
+.icon {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color6);
 }
