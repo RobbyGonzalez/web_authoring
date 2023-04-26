@@ -43,8 +43,8 @@ p {
     margin: 1rem;
 }
 
-/*540 max-width*/
-@media only screen and (max-width: 540px) {
+/*999 max-width*/
+@media only screen and (max-width: 999px) {
     article {
       width: 80%;
     }

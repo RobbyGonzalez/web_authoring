@@ -16,6 +16,8 @@ header {
     grid-template-columns: auto;
 }
 
+/*starts the theme color buttons*/
+
 #greenButton {
     position: absolute;
     width: 4rem;
@@ -47,6 +49,10 @@ header {
         margin-bottom: 1rem;
     }
 }
+
+/*ends the theme color buttons*/
+
+/*starts the responsive navbar*/
 
 .navBar {
     display: grid;
@@ -93,6 +99,8 @@ header {
         text-align: left;
     }
 }
+
+/*ends the responsive navbar*/
 
 main {
     grid-row: main-start;
