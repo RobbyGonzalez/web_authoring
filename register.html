@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robby's Portfolio</title>
+
+    <!--Here starts the fontawesome links-->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <!--End FA style sheets-->
+
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap bundle JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- <style>
+        a.home {
+            font-weight: light;
+        }
+    </style> -->
+</head>
+
+<body class="container bg-light border boder-1 shadow mt-3 mb-3">
+    <header class="headerColor">
+        <!-- <button id="greenButton">green</button>
+        <button id="orangeButton">orange</button> -->
+        <h1 class="text-center mt-2 mb-3">Robby's Blog</h1>
+        <nav class="navBar navColor navbar navbar-brand navbar-expand-lg navbar-dark bg-primary mb-4">
+            <div class="container-fluid">
+                <a class="home navbar-brand" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <a class="javaScript" href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;JavaScript</a>
+                            <a class="css" href="#"><i class="fa-solid fa-palette"></i>&nbsp;CSS</a>
+                            <a class="react" href="#"><i class="fa-solid fa-atom"></i>&nbsp;React</a>
+                            <a class="video" href="#"><i class="fa-solid fa-video"></i>&nbsp;Video</a>
+                            <a class="experience" href="#"><i class="fa-solid fa-briefcase"></i>&nbsp;Experience</a> -->
+                        <li class="nav-item">
+                            <a class="product navbar-brand nav-link" href="products.html"><i
+                                    class="fa-solid fa-cart-shopping"></i>&nbsp;Products</a>
+                        </li>
+                        <li class="nav-item"><a class="blog navbar-brand nav-link" href="blog.html"><i
+                                    class="fa-solid fa-blog"></i>&nbsp;Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="registerForm navbar-brand nav-link active" aria-current
+                                href="register.html"><i class="fa-solid fa-pen"></i>&nbsp;Register</a>
+                            <!-- <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a> -->
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="text-center fs-5 text mb-3">-Please fill out the below-</h2>
+        <form class="row g-5" action="mailto:sherd@dallascollege.edu" method="post">
+            <div class="mb-3 mt-5 col-md-6">
+                <label for="inputFirst" class="form-label">First Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control border border-dark border-2" id="inputFirst" name="firstName"
+                        required autofocus>
+                </div>
+            </div>
+            <div class="mb-3 mt-5 col-md-6">
+                <label for="inputLast" class="form-label">Last Name</label>
+                <input type="text" class="form-control border border-dark border-2" id="inputLast" name="lastName"
+                    required>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control border border-dark border-2" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" name="email" required>
+                <p id="emailHelp" class="form-text text-dark">&#42;We'll never share your email with anyone else.</p>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="exampleInputPhone" class="form-label">Phone number&colon;&nbsp;<strong class="text-danger">10
+                        digits with
+                        hyphens</strong></label>
+                <input type="tel" class="form-control border border-dark border-2" id="exampleInputPhone"
+                    aria-describedby="phoneNumberHelp" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <p id="phoneNumberHelp" class="form-text text-dark">&#42;Or your phone number.</p>
+            </div>
+            <div class="mb-3 ">
+                <label for="date" class="form-label">Date you want registration to be active.</label>
+                <input type="date" onload="getDate()" class="form-control border border-dark border-2" id="date"
+                    name="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword5" class="form-label">Password</label>
+                <input type="password" id="inputPassword5" class="form-control border border-dark border-2"
+                    aria-describedby="passwordHelpBlock" name="password" required>
+                <p id="passwordHelpBlock" class="form-text text-dark">
+                    &#42;Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                    spaces, special characters, or emoji.
+                </p>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Leave me a note if you'd like.</label>
+                <textarea class="form-control border border-dark border-2" id="exampleFormControlTextarea1" rows="3"
+                    name="userInput"></textarea>
+            </div>
+            <!-- need to work on this -->
+            <div class="mb-3">
+                <select class="form-select border border-dark border-2" aria-label="Default select example"
+                    name="userRating">
+                    <option selected disabled value="null">Rate this site: 1 being awesome and 3 being pretty bad
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you like me to send you notifications about my most recent projects?</p>
+            </div>
+            <div class="col-md-12 mt-0">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input border border-dark border-2" value=""
+                        id="flexCheckChecked" checked name="notifications">
+                    <label class="form-check-label" for="flexCheckChecked">Send away!</label>
+                </div>
+            </div>
+            <div>
+                <p>How would you like to be notified?</p>
+            </div>
+            <fieldset class="container mt-0">
+                <div class="col-md-12 mb-2">
+                    <div class="form-check">
+                        <input class="form-check-input border border-dark border-2" type="radio" name="emailNotification"
+                            id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Email
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <div class="form-check">
+                        <input class="form-check-input border border-dark border-2" type="radio" name="textNotification"
+                            id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Text
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row g-1"> <!--Do you need input tags for the buttons?-->
+                <div class="mb-4 col-md-2">
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+                <div class="mb-4 col-md-3">
+                    <div class="form-check">
+                        <button type="reset" class="btn btn-outline-danger border-2 fw-bold">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
