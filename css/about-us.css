@@ -1,0 +1,59 @@
+:root {
+    --color1: #F0F7D4;
+    --color2: #B2D732;
+    --color3: #66B032;
+    --color4: #347c98c4;
+    --color5: #092834;
+    --color6: #fff;
+    --color7: #000;
+}
+
+body {
+    margin-left: 1rem;
+}
+
+.navbar {
+    margin-top: 1%;
+    line-height: 2rem !important;
+    background-color: var(--color5) !important;
+}
+
+.btn {
+    background-color: var(--color3) !important;
+    color: black;
+}
+
+.profileImage {
+    background-image: url(/images/mask_selfie_2.jpg);
+    height: 80vh;
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-position: right 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 1rem 0 0;
+}
+
+.taglineText {
+    background-color: var(--color4);
+    margin: 0;
+    color: var(--color6);
+    
+}
+
+.taglineWrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -4rem;
+
+}
+
+.learned {
+    margin-top: 10rem;
+    padding: 1.5rem 0;
+    background: linear-gradient(65deg, var(--color5) 0%, var(--color4) 40%, var(--color3) 80%, var(--color2) 100%);
+}
+
+

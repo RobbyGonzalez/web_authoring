@@ -22,18 +22,54 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- <style>
-        a.home {
-            font-weight: light;
+    <style>
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: url("../fonts/PressStart2P-Regular.ttf") format("truetype"), url('pressstart2p-regular-webfont.woff2') format('woff2'), url('pressstart2p-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
-    </style> -->
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: black;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a{
+                font-size: 1rem !important;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            h1{
+                font-size: 1.4rem;
+            }
+
+            nav a{
+                font-size: 1.2rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="container bg-light border boder-1 shadow mt-3 mb-3">
     <header class="headerColor">
         <!-- <button id="greenButton">green</button>
         <button id="orangeButton">orange</button> -->
-        <h1 class="text-center mt-2 mb-3">Robby's Blog</h1>
+        <h1 class="text-center mt-2 mb-3">Registration Page</h1>
         <nav class="navBar navColor navbar navbar-brand navbar-expand-lg navbar-dark bg-primary mb-4">
             <div class="container-fluid">
                 <a class="home navbar-brand" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
@@ -58,6 +94,9 @@
                         </li>
                         <li class="nav-item"><a class="registerForm navbar-brand nav-link active" aria-current
                                 href="register.html"><i class="fa-solid fa-pen"></i>&nbsp;Register</a>
+                        </li>
+                        <li class="nav-item"><a class="registerForm navbar-brand nav-link" href="about-us.html"><i
+                                    class="fa-solid fa-user"></i>&nbsp;About Me</a>
                             <!-- <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a> -->
                         </li>
                     </ul>
@@ -92,7 +131,8 @@
                 <p id="emailHelp" class="form-text text-dark">&#42;We'll never share your email with anyone else.</p>
             </div>
             <div class="mb-3 col-md-6">
-                <label for="exampleInputPhone" class="form-label">Phone number&colon;&nbsp;<strong class="text-danger">10
+                <label for="exampleInputPhone" class="form-label">Phone number&colon;&nbsp;<strong
+                        class="text-danger">10
                         digits with
                         hyphens</strong></label>
                 <input type="tel" class="form-control border border-dark border-2" id="exampleInputPhone"
@@ -142,10 +182,12 @@
             <div>
                 <p>How would you like to be notified?</p>
             </div>
+
+            <!--Can't get these radio buttons to work-->
             <fieldset class="container mt-0">
                 <div class="col-md-12 mb-2">
                     <div class="form-check">
-                        <input class="form-check-input border border-dark border-2" type="radio" name="emailNotification"
+                        <input class="form-check-input border border-dark border-2" type="radio" name="notificationType"
                             id="flexRadioDefault1" checked>
                         <label class="form-check-label" for="flexRadioDefault1">
                             Email
@@ -154,7 +196,7 @@
                 </div>
                 <div class="col-md-12 mb-5">
                     <div class="form-check">
-                        <input class="form-check-input border border-dark border-2" type="radio" name="textNotification"
+                        <input class="form-check-input border border-dark border-2" type="radio" name="notificationType"
                             id="flexRadioDefault2">
                         <label class="form-check-label" for="flexRadioDefault2">
                             Text

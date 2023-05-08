@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robby's Portfolio</title>
+
+    <!--Here starts the fontawesome links-->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <!--End FA style sheets-->
+
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- about-us CSS-->
+    <link href="/css/about-us.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+
+    <!-- bootstrap bundle JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- modal JS-->
+    <script src="js/modal.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'Press Start 2P';
+            src: url("../fonts/PressStart2P-Regular.ttf") format("truetype"), url('pressstart2p-regular-webfont.woff2') format('woff2'), url('pressstart2p-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: black;
+            font-size: 300%;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+        <!-- <button id="greenButton">green</button>
+        <button id="orangeButton">orange</button> -->
+        <h1 class="text-center mt-2 mb-3" style="margin-top: 0 !important;">About Me</h1>
+        <nav class="navbar navbar-brand navbar-expand-lg navbar-dark mb-4">
+            <div class="container-fluid">
+                <a class="home navbar-brand" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <a class="javaScript" href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;JavaScript</a>
+                            <a class="css" href="#"><i class="fa-solid fa-palette"></i>&nbsp;CSS</a>
+                            <a class="react" href="#"><i class="fa-solid fa-atom"></i>&nbsp;React</a>
+                            <a class="video" href="#"><i class="fa-solid fa-video"></i>&nbsp;Video</a>
+                            <a class="experience" href="#"><i class="fa-solid fa-briefcase"></i>&nbsp;Experience</a> -->
+                        <li class="nav-item">
+                            <a class="product navbar-brand nav-link" href="products.html"><i
+                                    class="fa-solid fa-cart-shopping"></i>&nbsp;Products</a>
+                        </li>
+                        <li class="nav-item"><a class="blog navbar-brand nav-link" href="blog.html"><i
+                                    class="fa-solid fa-blog"></i>&nbsp;Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="navbar-brand nav-link" href="register.html"><i
+                                    class="fa-solid fa-pen"></i>&nbsp;Register</a>
+                        </li>
+                        <li class="nav-item"><a class="navbar-brand nav-link active" aria-current
+                                href="about-us.html"><i class="fa-solid fa-user"></i>&nbsp;About Me</a>
+                            <!-- <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a> -->
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="imageWrapper">
+            <!--mask selfie-->
+            <div class="row">
+                <div class="col profileImage"></div>
+            </div>
+
+            <div class="taglineWrapper">
+                <!--tag line-->
+                <div class="row justify-content-md-center">
+                    <h2 class="col col-lg-4 text-center taglineText">
+                        Hi! I am Robby.
+                    </h2>
+                </div>
+                <div class="row justify-content-md-center">
+                    <p class="col col-lg-4 text-center taglineText">
+                        &#40;Web developer in training.&#41;
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--What I leaned-->
+        <div class="row justify-content-md-center learned container-fluid">
+            <h2 class="col col-lg-4 text-center">
+                What I've learned
+            </h2>
+        </div>
+
+        <!--gallery
+        -->
+        <div class="row justify-content-md-center container-fluid" id="gallery">
+            <div class="col col-lg-3">
+                <figure class="figure">
+                    <img id="myImg" src="images/dinosaur_article.webp" alt="responsive design graphic" role="thumbnail" style="width:100%;max-width:300px">
+                    <figcaption class="figure-caption">Responsive design for websites is a design approach that aims to create a website that can adapt to different screen sizes and devices. This means that the website will look and function well whether it's viewed on a desktop computer, tablet, or smartphone. By using flexible layouts, images, and media queries, responsive design ensures that the website's content is accessible and user-friendly for all users, regardless of the device they're using. This approach is essential in today's digital landscape, where more and more users access websites on mobile devices.</figcaption>
+                </figure>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="col col-lg-3">
+                <figure class="figure">
+                    <img id="myImg" src="images/dinosaur_article.webp" alt="debug graphic" role="thumbnail" style="width:100%;max-width:300px">
+                    <figcaption class="figure-caption">Debugging is an essential aspect of web design because it helps identify and fix issues that may prevent a website from functioning correctly. Without proper debugging, a website may have broken links, slow loading times, incorrect functionality, or display issues that could negatively impact user experience. By identifying and fixing these issues, debugging ensures that the website functions as intended and provides a positive user experience.</figcaption>
+                </figure>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="col col-lg-3">
+                <figure class="figure">
+                    <img id="myImg" src="images/dinosaur_article.webp" alt="bootstrap graphic" role="thumbnail" style="width:100%;max-width:300px">
+                    <figcaption class="figure-caption">Bootstrap is a popular front-end framework that offers a wide range of pre-built CSS classes, components, and JavaScript plugins, which can save time and effort when building a website. These pre-built classes help ensure consistency in design and functionality, reducing the need for custom code. Bootstrap classes are also designed to be responsive and mobile-friendly, which means they automatically adapt to different screen sizes and devices. This helps create a consistent user experience across all devices, from desktops to smartphones.</figcaption>
+                </figure>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="col col-lg-3">
+                <figure class="figure">
+                    <img id="myImg" src="images/dinosaur_article.webp" alt="color themes graphic" role="thumbnail" style="width:100%;max-width:300px">
+                    <figcaption class="figure-caption">JavaScript can be used to change color themes on a website by manipulating the website's CSS styles. This can be done by defining a set of CSS rules for each color theme, and then using JavaScript to dynamically switch between them. This provides a more dynamic and customizable user experience, allowing users to switch between different visual styles that suit their preferences.</figcaption>
+                </figure>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
