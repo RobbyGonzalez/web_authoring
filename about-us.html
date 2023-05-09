@@ -18,7 +18,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- about-us CSS-->
-    <link href="/css/about-us.css" rel="stylesheet">
+    <link href="css/about-us.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
 
     <!-- bootstrap bundle JS-->
@@ -32,7 +32,7 @@
     <style>
         @font-face {
             font-family: 'Press Start 2P';
-            src: url("../fonts/PressStart2P-Regular.ttf") format("truetype"), url('pressstart2p-regular-webfont.woff2') format('woff2'), url('pressstart2p-regular-webfont.woff') format('woff');
+            src: url("fonts/PressStart2P-Regular.ttf") format("truetype"), url('pressstart2p-regular-webfont.woff2') format('woff2'), url('pressstart2p-regular-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -52,8 +52,6 @@
 
 <body>
     <header class="sticky-top bg-white">
-        <!-- <button id="greenButton">green</button>
-        <button id="orangeButton">orange</button> -->
         <h1 class="text-center mt-2 mb-3" style="margin-top: 0 !important;">About Me</h1>
         <nav class="navbar navbar-brand navbar-expand-lg navbar-dark mb-4">
             <div class="container-fluid">
@@ -128,81 +126,150 @@
         -->
         <div class="row justify-content-md-center container-fluid" id="gallery">
             <div class="col col-lg-3">
+                <h3 class="caption-top">
+                    Responsive design
+                </h3>
                 <figure class="figure">
-                    <img id="myImg" src="images/dinosaur_article.webp" alt="responsive design graphic" role="thumbnail" style="width:100%;max-width:300px">
-                    <figcaption class="figure-caption">Responsive design for websites is a design approach that aims to create a website that can adapt to different screen sizes and devices. This means that the website will look and function well whether it's viewed on a desktop computer, tablet, or smartphone. By using flexible layouts, images, and media queries, responsive design ensures that the website's content is accessible and user-friendly for all users, regardless of the device they're using. This approach is essential in today's digital landscape, where more and more users access websites on mobile devices.</figcaption>
+                    <img id="0" class="img-thumbnail" src="images/responsive.png" alt="responsive design graphic" aria-label="thumbnail">
+                    <figcaption class="figure-caption">Responsive design for websites is a design approach that aims to
+                        create a website that can adapt to different screen sizes and devices. This means that the
+                        website will look and function well whether it's viewed on a desktop computer, tablet, or
+                        smartphone. By using flexible layouts, images, and media queries, responsive design ensures that
+                        the website's content is accessible and user-friendly for all users, regardless of the device
+                        they're using. This approach is essential in today's digital landscape, where more and more
+                        users access websites on mobile devices.</figcaption>
                 </figure>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal-1" class="modal">
 
                     <!-- The Close Button -->
                     <span class="close">&times;</span>
 
                     <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
+                    <video class="video" controls>
+                        <source src="images/responsive.mp4" type="video/mp4" class="modal-content" id="video01">
+                        Your browser does not support the video tag.
+                    </video>
 
                     <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                    <div class="caption"></div>
                 </div>
             </div>
             <div class="col col-lg-3">
+                <h3 class="caption-top">
+                    Debugging
+                </h3>
                 <figure class="figure">
-                    <img id="myImg" src="images/dinosaur_article.webp" alt="debug graphic" role="thumbnail" style="width:100%;max-width:300px">
-                    <figcaption class="figure-caption">Debugging is an essential aspect of web design because it helps identify and fix issues that may prevent a website from functioning correctly. Without proper debugging, a website may have broken links, slow loading times, incorrect functionality, or display issues that could negatively impact user experience. By identifying and fixing these issues, debugging ensures that the website functions as intended and provides a positive user experience.</figcaption>
+                    <img id="1" class="img-thumbnail" src="images/debug.png" alt="debug graphic" aria-label="thumbnail">
+                    <figcaption class="figure-caption">Debugging is an essential aspect of web design because it helps
+                        identify and fix issues that may prevent a website from functioning correctly. Without proper
+                        debugging, a website may have broken links, slow loading times, incorrect functionality, or
+                        display issues that could negatively impact user experience. By identifying and fixing these
+                        issues, debugging ensures that the website functions as intended and provides a positive user
+                        experience.</figcaption>
                 </figure>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal-2" class="modal">
 
                     <!-- The Close Button -->
                     <span class="close">&times;</span>
 
                     <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
+                    <video class="video" controls>
+                        <source src="images/debug.mp4" type="video/mp4" class="modal-content" id="video02">
+                        Your browser does not support the video tag.
+                    </video>
 
                     <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                    <div class="caption"></div>
                 </div>
             </div>
             <div class="col col-lg-3">
+                <h3 class="caption-top">
+                    Bootstrap
+                </h3>
                 <figure class="figure">
-                    <img id="myImg" src="images/dinosaur_article.webp" alt="bootstrap graphic" role="thumbnail" style="width:100%;max-width:300px">
-                    <figcaption class="figure-caption">Bootstrap is a popular front-end framework that offers a wide range of pre-built CSS classes, components, and JavaScript plugins, which can save time and effort when building a website. These pre-built classes help ensure consistency in design and functionality, reducing the need for custom code. Bootstrap classes are also designed to be responsive and mobile-friendly, which means they automatically adapt to different screen sizes and devices. This helps create a consistent user experience across all devices, from desktops to smartphones.</figcaption>
+                    <img id="2" class="img-thumbnail" src="images/bootstrap.png" alt="bootstrap graphic"
+                    aria-label="thumbnail">
+                    <figcaption class="figure-caption">Bootstrap is a popular front-end framework that offers a wide
+                        range of pre-built CSS classes, components, and JavaScript plugins, which can save time and
+                        effort when building a website. These pre-built classes help ensure consistency in design and
+                        functionality, reducing the need for custom code. Bootstrap classes are also designed to be
+                        responsive and mobile-friendly, which means they automatically adapt to different screen sizes
+                        and devices. This helps create a consistent user experience across all devices, from desktops to
+                        smartphones.</figcaption>
                 </figure>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal-3" class="modal">
 
                     <!-- The Close Button -->
                     <span class="close">&times;</span>
 
                     <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
+                    <video class="video" controls>
+                        <source src="images/bootstrap.mp4" type="video/mp4" class="modal-content" id="video03">
+                        Your browser does not support the video tag.
+                    </video>
 
                     <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                    <div class="caption"></div>
                 </div>
             </div>
             <div class="col col-lg-3">
+                <h3 class="caption-top">
+                    Color themes
+                </h3>
                 <figure class="figure">
-                    <img id="myImg" src="images/dinosaur_article.webp" alt="color themes graphic" role="thumbnail" style="width:100%;max-width:300px">
-                    <figcaption class="figure-caption">JavaScript can be used to change color themes on a website by manipulating the website's CSS styles. This can be done by defining a set of CSS rules for each color theme, and then using JavaScript to dynamically switch between them. This provides a more dynamic and customizable user experience, allowing users to switch between different visual styles that suit their preferences.</figcaption>
+                    <img id="3" class="img-thumbnail" src="images/change-color.png" alt="color themes graphic"
+                    aria-label="thumbnail">
+                    <figcaption class="figure-caption">JavaScript can be used to change color themes on a website by
+                        manipulating the website's CSS styles. This can be done by defining a set of CSS rules for each
+                        color theme, and then using JavaScript to dynamically switch between them. This provides a more
+                        dynamic and customizable user experience, allowing users to switch between different visual
+                        styles that suit their preferences.</figcaption>
                 </figure>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal-4" class="modal">
 
                     <!-- The Close Button -->
                     <span class="close">&times;</span>
 
                     <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
+                    <video class="video" controls>
+                        <source src="images/change-color.mp4" type="video/mp4" class="modal-content" id="video04">
+                        Your browser does not support the video tag.
+                    </video>
 
                     <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                    <div class="caption"></div>
                 </div>
             </div>
         </div>
 
     </main>
 
+    <div class="container-fluid" id="footer">
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Form -->
+                <address class="col-auto">
+                    Contact me&colon;
+                    <a class="text-white" href="mailto:webmaster@webmaster.com" id="email">RobbyGonzalez@gmail.com</a>
+                </address>
+                <!-- Section: Form -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p><small id="copyright">Robby&apos;s Portfolio &copy;2023</small></p>
+                <p><small>This site is made possible by <a href="https://www.dallascollege.edu/pages/default.aspx"
+                            target="_blank">Dallas College</a></small></p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
 </body>
 
 </html>

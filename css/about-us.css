@@ -12,6 +12,19 @@ body {
     margin-left: 1rem;
 }
 
+#gallery {
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+.figure {
+    margin: auto 1rem;
+    box-shadow: darkgrey 2px 2px 2px;
+}
+
 .navbar {
     margin-top: 1%;
     line-height: 2rem !important;
@@ -24,7 +37,7 @@ body {
 }
 
 .profileImage {
-    background-image: url(/images/mask_selfie_2.jpg);
+    background-image: url(../images/mask_selfie_2.jpg);
     height: 80vh;
     opacity: 0.75;
     background-attachment: fixed;
@@ -46,14 +59,16 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
-    bottom: -4rem;
+    bottom: -1.55rem;
 
 }
 
 .learned {
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding: 1.5rem 0;
     background: linear-gradient(65deg, var(--color5) 0%, var(--color4) 40%, var(--color3) 80%, var(--color2) 100%);
 }
 
-
+#footer {
+    margin-top: 5rem;
+}
